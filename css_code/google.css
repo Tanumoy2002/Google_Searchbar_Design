@@ -33,10 +33,10 @@ body{
 input{
     height: 2.7rem;
     width: 30rem;
-    border-radius: 1rem;
     margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(44, 44,44,44);  
     padding-left: 1rem;
-    background-color: rgba(44, 44,44,44);
     border: 1px solid white;
     cursor: text;
     outline: none;
