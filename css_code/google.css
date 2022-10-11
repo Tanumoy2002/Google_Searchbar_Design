@@ -1,0 +1,274 @@
+/* @font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  } */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Poppins:wght@300&family=Rubik:wght@300&family=Ubuntu&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    /* font-family:'Product Sans'; */
+}
+
+
+body{
+    background-color: rgba(44, 44,44,44);
+}
+
+#p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    flex-direction: column;
+    /* background-color: aqua; */
+ 
+    
+}
+
+input{
+    height: 2.7rem;
+    width: 30rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    /* padding-left: 2rem; */
+    background-color: rgba(44, 44,44,44);
+    border: 1px solid white;
+    cursor: text;
+    outline: none;
+    color: #fff;
+}
+
+#navbar{
+        height: 3rem;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        margin-right: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+    
+    }
+
+
+#nav1{
+    height: 3.2rem;
+    width: 78rem;
+    background-color: rgba(44, 44,44,44);
+}
+
+#nav2{
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h4{
+    color: #fff;
+    margin: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+#nav2 #dots{
+    width: 1.3rem;
+    height: 1.3rem;
+    align-self: center;
+    filter: invert(100%);
+}
+#nav2 #person{
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+    margin-left: 1rem;
+    margin-right: .6rem;
+    border-radius: 1rem;
+}
+
+
+#button{
+    margin-top: 1.5rem;
+    display: flex;
+    gap:2rem;
+}
+
+#btn1{
+    height: 2.2rem;
+    width: 8.3rem;
+    font-size :medium;
+    color: #fff;
+    background-color: rgb(60, 58, 58);
+    border: none;
+    outline: none;
+    border-radius: .4rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+#btn2{
+    height: 2.2rem;
+    width: 8.3rem;
+    color: #fff;
+    border-radius: .4rem;
+    background-color: rgb(60, 58, 58);
+    border: none;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* ion-icon{
+    position: absolute;
+    margin-top: 2rem;
+    color: #fff;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    
+} */
+
+#c2{
+    position: relative;
+}
+
+#c2 #mic{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: -3rem;
+}
+
+#offer{
+    margin: 1.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+#offer a{
+    color: skyblue;
+    text-decoration: none;
+    word-spacing: .5rem;
+    font-size: small;
+}
+
+#india{
+    /* background-color: rgb(39, 34, 34); */
+    border-bottom: 1px solid rgb(95, 93, 93);
+    font-family: 'Rubik', sans-serif;
+}
+
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(39, 34, 34); */
+}
+
+#footer1{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+}
+
+#footer2{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/* responsive */
+
+@media screen and ( max-width: 719px){
+
+    #india{
+        display: none;
+    }
+
+    #footer{
+        display: none;
+    }
+
+}
+    
+@media screen and ( max-width: 615px){
+
+    #offer a{
+        font-size: .7rem;
+    }
+
+}
+
+@media screen and ( max-width: 554px){
+
+
+   #c2 input{
+        width: 28rem;
+    }
+
+    #offer #go{
+       display: none;
+    }
+
+}
+
+@media screen and (max-width: 467px){
+
+    #c2 input{
+        width: 25rem;
+    }
+}
+
+@media screen and ( max-width: 435px){
+
+    #c1 img{
+        transform: scale(.8);
+    }
+
+    #c2 input{
+        width: 20rem;
+    }
+
+    #offer a{
+        font-size: .6rem;
+    }
+}
+
+@media screen and ( max-width: 385px){
+
+    #offer a{
+        font-size: .5rem;
+    }
+
+    #c2 input{
+        width: 15rem;
+    }
+
+    #c1 img{
+        transform: scale(.6);
+    }
+
+    #btn1,#btn2{
+        transform: scale(.8);
+    }
+    #button{
+        gap: 0;
+    }
+
+}
+
+@media screen and ( max-width: 340px){
+
+    #offer a{
+        font-size: .3rem;
+    }
+}
+    
+
+

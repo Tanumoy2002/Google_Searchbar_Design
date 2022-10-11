@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <!-- ........link title icon........ -->
+    <link rel="shortcut icon" href="../images/Google_Icons-09-512.png" type="image/x-icon" />
+
+    <!-- ........link css........ -->
+    <link rel="stylesheet" href="../css_code/google.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar">
+        <div id="nav1"></div>
+        <div id="nav2">
+          <h4>Gmail</h4>
+          <h4>Images</h4>
+          <img
+            id="dots"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/9dots.svg/1024px-9dots.svg.png"
+            alt=""
+          />
+          <img
+            id="person"
+            src="https://lh3.googleusercontent.com/ogw/AOh-ky1-sTw8do8mdWRTevRxmuj2uhdUC6uZB7JRz5gz=s32-c-mo"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="p">
+        <div id="c1">
+          <img
+            src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+            alt=""
+          />
+        </div>
+        <div id="c2">
+          <!-- <ion-icon name="search-outline"></ion-icon> -->
+          <input type="text" name="name" id="name" class="info" />
+          <a href="https://www.google.com/webhp"><img
+            id="mic"
+            src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+            alt=""
+          /></a>
+        </div>
+        <div id="button">
+          <button id="btn1" class="search">Google Search</button>
+          <a href="https://www.google.com/doodles"
+            ><button id="btn2">I'm Felling Lucky</button>
+          </a>
+        </div>
+
+        <div id="offer">
+          <p id="go">Google offered in:</p>
+          <a href="#"
+            >हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી ಕನ್ನಡ മലയാളം ਪੰਜਾਬੀ</a
+          >
+        </div>
+      </div>
+
+      <div id="india">
+        <h4>India</h4>
+      </div>
+
+      <div id="footer">
+        <div id="footer1">
+          <h4>About</h4>
+          <h4>Advertising</h4>
+          <h4>Business</h4>
+          <h4>How Search Works</h4>
+        </div>
+        <div id="footer2">
+          <h4>Privacy</h4>
+          <h4>Terms</h4>
+          <h4>Settings</h4>
+        </div>
+      </div>
+    </div>
+    <script>
+      let info = document.querySelector(".info");
+      let search = document.querySelector(".search");
+
+      search.onclick = function () {
+        let url = "https://www.google.com/search?q=" + info.value;
+        window.open(url, "_self");
+      };
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
